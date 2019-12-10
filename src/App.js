@@ -1,27 +1,42 @@
 import React, { Component } from 'react';
-import Background from './bg.png';
-import Foto from './assets/img/logo.png';
+import Background from './gambar.png';
 import { Button, Button2 } from './components';
+import logo from './call.png'
+import stars from './stars.png'
 class App extends Component {
   render() {
     return (
       <div style={styles.background}>
         <div style={styles.overlay}>
           <div style={styles.container}>
-            <img src={Foto} alt="" style={{ height: 168, width: 150 }} />
             <div style={styles.h1}>
-              A Better way to
+              Save your earth
                             <div style={styles.h2}>
-                Travel to Bali
-                            </div>
+
+              </div>
             </div>
             <div style={styles.subTittle}>
-              Cheapest and Easyer
+              Menanam satu pohon,menghasilkan sejuta manfaat
                         </div>
             <div style={styles.wrapperInput}>
-              <Button2 title="Read More" />
-              <Button title="Reservation" />
+              <img
+                src={stars}
+                style={styles.image}
+              />
+
+              <Button2 title="Donasi pohon"
+              />
+              <div>
+                <Button title="Hubungi kami" />
+              </div>
             </div>
+            <img
+              src={logo}
+              style={{
+                marginRight: 570,
+                marginTop: -35,
+              }}
+            />
 
           </div>
         </div>
@@ -46,7 +61,7 @@ const styles = {
     backgroundSize: 'cover',
   },
   overlay: {
-    backgroundColor: "rgba(81, 77, 67, 0.7)",
+
     height: h,
     width: '100%'
   },
@@ -54,12 +69,13 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    fontFamily: 'Pacifico'
+    fontFamily: 'Pangolin'
   },
   h1: {
     alignSelf: 'center',
-    marginTop: 50,
-    color: 'white',
+    marginTop: 250,
+    marginRight: 700,
+    color: 'black',
     fontSize: 48,
     textAlign: 'center',
     maxWidth: 700
@@ -67,17 +83,18 @@ const styles = {
   h2: {
     color: 'orange',
     textAlign: 'center',
-    maxWidth: 700
+    maxWidth: 700,
   },
   wrapperInput: {
     display: 'flex',
     alignSelf: 'center',
-    marginTop: 60
+    marginTop: 50
   },
   subTittle: {
-    color: 'white',
+    color: 'black',
     fontFamily: "Roboto",
-    marginTop: 20
+    marginTop: 20,
+    marginRight: 680,
   },
 }
 
